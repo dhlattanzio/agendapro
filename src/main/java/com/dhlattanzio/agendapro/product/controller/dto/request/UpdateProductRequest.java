@@ -2,9 +2,11 @@ package com.dhlattanzio.agendapro.product.controller.dto.request;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
+import lombok.Builder;
 
 import java.math.BigDecimal;
 
+@Builder
 public record UpdateProductRequest(
         @NotBlank(message = "Name is required")
         String name,
